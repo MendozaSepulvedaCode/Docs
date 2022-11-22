@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    overflow-y: scroll;
+}
+
+/*Navbar*/
+
+nav {
+    background: #0e9f95;
+    height: 80px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    line-height: 80px;
+    z-index: 100;
+    margin-right: 100px;
+}
+
+.container-logo {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.container-logo h2 {
+    margin-left: 90px;
+    color: #fff;
+    font-weight: 240px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.container-logo h2 span {
+    color: #ff4000;
+    font-weight: 700;
+}
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin: 0 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.links .link a:hover {
+    color: #ff4000;
+}
+
+.toggle {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 915px){
+    .toggle {
+        display: inline-block;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #00bb7a;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: -1;
+        top:-100vh    
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .links .link :hover{
+        background: #89ff95;
+    }
+
+    .container-logo {
+        margin-left: 25px;
+    }
+}
+
+/*Contenido*/
+
+.contenido{
+
+    display:flex;
+    max-width: 144vw;
+    width: 100vw;
+    height: 26vw;
+    position: relative;
+}
+
+.prev{
+    font-size: 0.9vw;
+    color: #ffffff;
+    background: #05b6fc;
+    padding: 0.15vh;
+    display: table-cell;
+    padding: 0; 
+    width: 20vw;
+    height: 46vw;
+    
+
+}
+
+.documentos{
+
+    font-size: 1.5vw;
+    color: #ffffff;
+    padding: 0.15vh;
+    
+    display: table-cell;
+    padding: 0; 
+    width: 71.3vw;
+    height: 46vw;
+
+}
+.barra{
+   
+    display: table-cell;
+    padding: 0; 
+    width: 71.3vw;
+    height: 6vw;
+    
+    
+}
+
+.titulo{
+    display: contents;
+    margin-bottom: 2vw;
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    color: gray;
+    
+}
+
+
+.letras-prev{
+    margin-left: 2vw;
+}
+.letras-prev2{
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.titulo-prev{
+    margin-left: 2vw;
+    margin-bottom: 2.5vw;
+}
+
+.letras-cod{
+    margin-left: 2vw;
+    margin-top: 5vw;
+}
+
+.documentosinv{
+
+    font-size: 1.70vw;
+    color: black;
+    margin-top: 0.6vw;
+    margin: 1vw;
+}
+
+.producto{
+    color: #000000;
+    text-align: center;
+    width: 40vw;
+    
+   
+
+}
+
+.estado{
+    color: #000000;
+    text-align: center;
+    width: 10vw;
+    background: #fff;
+   
+
+}
+
+.fecha{
+    color: #000000;
+    text-align: center;
+    width: 30vw;
+   
+
+}
+
+.cantidad{
+    
+    color: #000000;
+    text-align: center;
+    width: 10vw;
+    height: 10vw;
+   
+
+}
+
+.inventariotabla{
+    
+    width: 71.3vw;
+    height: 46vw;
+    
+}
+
+.imageneslibros{
+
+    width: 7vw;
+    height: 7vw;
+}
